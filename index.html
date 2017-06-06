@@ -11,12 +11,20 @@
      <h1>a Factory of People</h1>   
       <section> 
           <div>
-              <form>
+              <form id="personForm">
                   <p>
-                      <label for="personName">Name</label>
+                      <label for="personName">Name:</label>
                       <input type="text" name="personName">
+                </p>
+                <p>
+		            <label for="favoriteColor">Favorite Color</label>
+		            <input type="color" name="favoriteColor">
+	            </p>
+                <p>
+                    <button type="submit">Go</button>
                 </p>
           </div>
       </section>
+      <script src="index.js"></script>
     </body>
 </html>
