@@ -9,7 +9,7 @@ function handleSubmit(ev) {
     // const age = f.age.value
     const person = {
         name: f.personName.value,
-        favoriteColor: f.favoriteColor.value,
+        favoriteColor: renderColor(f.favoriteColor.value).outerHTML,
         age: f.age.value,
     }
 
@@ -43,7 +43,7 @@ function handleSubmit(ev) {
     // list.appendChild(nameItem)
     // list.appendChild(colorItem)
     // list.appendChild(ageItem)
-    
+
     const list = renderList(person)
     //details.appendChild(renderList(person))
     details.appendChild(list)
@@ -61,7 +61,7 @@ function renderColor(color){
 
 function renderListItem(label, value){
     const item = document.createElement('li')
-    item.textContent = `${label}: ${value}`
+    item.innerHTML = `${label}: ${value}`
 
     return item
 }

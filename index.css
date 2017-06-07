@@ -6,7 +6,9 @@ body {
 label{
     color: white;
 }
-
+button {
+    color: white;
+}
 section > div {
   width: 80%;
   margin: 1rem auto;
