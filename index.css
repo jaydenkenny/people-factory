@@ -1,5 +1,10 @@
 body {
   padding: 1rem;
+  background-color: black;
+  color: yellow;
+}
+label{
+    color: white;
 }
 
 section > div {
